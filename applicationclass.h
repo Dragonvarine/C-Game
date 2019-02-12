@@ -32,6 +32,10 @@ const float SCREEN_NEAR = 0.1f;
 #include "modelclass.h"
 #include "lightshaderclass.h"
 #include "playerclass.h"
+#include "snakehead.h"
+#include "snakemain.h"
+#include "gridclass.h"
+#include "food.h"
 #include <vector>
 
 
@@ -48,10 +52,13 @@ public:
 	bool Initialize(HINSTANCE, HWND, int, int);
 	void Shutdown();
 	bool Frame();
+	
 
 private:
 	//bool HandleInput(float);
 	bool RenderGraphics();
+	float tCounter = 0;
+	
 
 private:
 	InputClass* m_Input;
@@ -68,6 +75,10 @@ private:
 	LightClass* m_Light;
 	LightShaderClass* m_LightShader;
 	PlayerClass* m_Player;
+	snakemain* m_Snakeplayer;
+	SnakeHead* m_Snakehead;
+	gridclass* m_Grid;
+	Food* m_Food;
 
 	ModelClass* m_RenderList[20];
 };

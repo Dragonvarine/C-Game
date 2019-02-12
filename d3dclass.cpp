@@ -340,7 +340,9 @@ bool D3DClass::Initialize(int screenWidth, int screenHeight, bool vsync, HWND hw
 
 	// Setup the projection matrix.
 	fieldOfView = (float)D3DX_PI / 4.0f;
+	//screenAspect = (float)screenWidth / (float)screenHeight;
 	screenAspect = (float)screenWidth / (float)screenHeight;
+
 
 	// Create the projection matrix for 3D rendering.
 	D3DXMatrixPerspectiveFovLH(&m_projectionMatrix, fieldOfView, screenAspect, screenNear, screenDepth);

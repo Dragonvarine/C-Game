@@ -2,9 +2,8 @@
 
 PlayerClass::PlayerClass()
 {
-	m_Model[100];
+	m_Model = 0;
 	m_Input = 0;
-	int m_Bodyamount[100];
 }
 
 PlayerClass::PlayerClass(const PlayerClass &)
@@ -28,21 +27,20 @@ bool PlayerClass::Initialize(ID3D11Device* device, HWND hwnd, InputClass* input,
 	}
 
 	// Initialize the model object.
-	for (int i = 0; i < 100; i++) {
-		result = m_Model->Initialize(device, "../Engine/data/cube.txt", L"../Engine/data/blue.dds");
-		if (!result)
-		{
-			MessageBox(hwnd, L"Could not initialize the player model object.", L"Error", MB_OK);
-			return false;
-		}
+	/*result = m_Model->Initialize(device, "../Engine/data/cube.txt", L"../Engine/data/red.dds");
+	if (!result)
+	{
+		MessageBox(hwnd, L"Could not initialize the player model object.", L"Error", MB_OK);
+		return false;
 	}
 
+	//outModel = *m_Model;
 
 	scale = D3DXVECTOR3(-3.5f, -1.5f, 0.0f);
 	rotation = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 	position = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 
-	forwardVector = D3DXVECTOR3(0.0f, 0.0, 1.0f);
+	forwardVector = D3DXVECTOR3(0.0f, 0.0, 1.0f);*/
 
 
 	return true;

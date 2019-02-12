@@ -53,12 +53,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\gamer\Desktop\DX Framework\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\DX Framework\Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\gamer\Desktop\DX Framework\Lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\DX Framework\Lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -85,7 +85,9 @@
     <ClCompile Include="d3dclass.cpp" />
     <ClCompile Include="fontclass.cpp" />
     <ClCompile Include="fontshaderclass.cpp" />
+    <ClCompile Include="food.cpp" />
     <ClCompile Include="fpsclass.cpp" />
+    <ClCompile Include="gridclass.cpp" />
     <ClCompile Include="inputclass.cpp" />
     <ClCompile Include="lightclass.cpp" />
     <ClCompile Include="lightshaderclass.cpp" />
@@ -94,6 +96,7 @@
     <ClCompile Include="playerclass.cpp" />
     <ClCompile Include="positionclass.cpp" />
     <ClCompile Include="snakehead.cpp" />
+    <ClCompile Include="snakemain.cpp" />
     <ClCompile Include="systemclass.cpp" />
     <ClCompile Include="terrainclass.cpp" />
     <ClCompile Include="terrainshaderclass.cpp" />
@@ -108,7 +111,9 @@
     <ClInclude Include="d3dclass.h" />
     <ClInclude Include="fontclass.h" />
     <ClInclude Include="fontshaderclass.h" />
+    <ClInclude Include="food.h" />
     <ClInclude Include="fpsclass.h" />
+    <ClInclude Include="gridclass.h" />
     <ClInclude Include="inputclass.h" />
     <ClInclude Include="lightclass.h" />
     <ClInclude Include="lightshaderclass.h" />
@@ -116,6 +121,7 @@
     <ClInclude Include="playerclass.h" />
     <ClInclude Include="positionclass.h" />
     <ClInclude Include="snakehead.h" />
+    <ClInclude Include="snakemain.h" />
     <ClInclude Include="systemclass.h" />
     <ClInclude Include="terrainclass.h" />
     <ClInclude Include="terrainshaderclass.h" />
